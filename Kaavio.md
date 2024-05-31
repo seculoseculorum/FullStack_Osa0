@@ -15,12 +15,12 @@ sequenceDiagram
 
     Note right of Browser: The User adds data into the form and clicks on the submit button initiating a post command
 
-    Browser->Server: POST {Form information}
+    Browser->>Server: POST {Form information}
     activate Server
     Server-->Browser: REDIRECT 302
     deactivate Server 
     
-    Browser->Server: GET https://studies.cs.helsinki.fi/exampleapp/notes
+    Browser->>Server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate Server
     Server-->>Browser: HTML document
     deactivate Server
