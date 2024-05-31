@@ -1,4 +1,5 @@
-sequenceDiagram
+'''mermaid
+sequenceDiagram;
     participant Browser
     participant Server
     
@@ -23,7 +24,7 @@ sequenceDiagram
     activate server
     server -->>browser: HTML document
     deactivate server
-    
+'''
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.js
     activate server
     server-->>browser: the JavaScript file
